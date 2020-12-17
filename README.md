@@ -21,3 +21,9 @@ To answer this question we had to make some assumptions:
 So if a cpu that consumes 10 times more peak power than another, it can require less energy to complete a task if it completes it in less than 1/10 of the time of the other one.
 
 If we want to calculate the battery life from the McPAT output, it should give us enough information to calculate the total energy consumption of the cpu for the program. So it could either give us that number or an average power consumption and an estimated time that it would take to run the program.
+
+
+#### 3.
+Since the tow systems will not turn off after the completion of the program, even if the arm cpu would run only on its peak power(1.74W) and the xeon cpu on its leakage power(36.8W), the xeon cpu would have no chance on consuming less energy over time. The difference only increases when we factor in the 134.9W of peak power for the xeon.
+
+## 2nd step
